@@ -12,7 +12,7 @@ object Cipher extends App{
 
     val E = (c:Char,key:Int,a:String)=>a((a.indexOf(c.toLower)+key)%a.size)
     
-    val D = (c:Char,key:Int,a:String)=>a((a.indexOf(c.toLower)-key)%a.size)
+    val D = (c:Char,key:Int,a:String)=>a((a.indexOf(c.toLower)-key+a.size)%a.size)
 
     val cipher = (algo:(Char,Int,String)=>Char,s:String,key:Int,a:String)=>s.map(algo(_,key,a))
 
