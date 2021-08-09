@@ -78,8 +78,6 @@ object seatReservation extends App {
             return
         }
 
-        // print(startId + " " + destinationId + "\n")
-
         if(startId>=destinationId)
         {
             print("Starting city should come first..!\n")
@@ -142,8 +140,6 @@ object seatReservation extends App {
         val startId = getCityId(start)
         val destinationId = getCityId(destination)
 
-        // print(startId + " " + destinationId + "\n")
-
         if(startId == -1 || destinationId == -1)
         {
             print("\nInvalid City..!\n")
@@ -192,9 +188,7 @@ object seatReservation extends App {
 
         val startId = getCityId(start)
         val destinationId = getCityId(destination)
-
-        // print(startId + " " + destinationId + "\n")
-
+        
         if(startId == -1 || destinationId == -1)
         {
             print("\nInvalid City..!\n")
