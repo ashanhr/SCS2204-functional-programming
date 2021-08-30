@@ -48,7 +48,7 @@ class Account(id:String,n: Int, b: Double) {
                 return this
             }
             else {
-                this.balance += balance * 0.1
+                this.balance = this.balance * 1.1
                 return this
             }
         }
